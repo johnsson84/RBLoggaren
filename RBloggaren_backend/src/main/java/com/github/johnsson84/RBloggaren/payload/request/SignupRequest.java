@@ -23,6 +23,9 @@ public class SignupRequest {
 
     private Set<String> roles;
 
+    public SignupRequest() {
+    }
+
     public @NotBlank @Size(min = 2, max = 30) String getUsername() {
         return username;
     }
