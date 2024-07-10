@@ -16,43 +16,28 @@
     -webkit-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
 }
-.form-box {
-    margin-top: 20px;
-    background-color: white;
+.create-new, .back-to-login {
+    background-color: rgb(185, 253, 154);
+    padding: 5px;
     border-radius: 5px;
-    padding: 20px;
+    border: none;
+    font-size: 0.7em;
     box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
     -webkit-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
 }
-.form-box h2 {
-    margin-bottom: 10px;
+.back-to-login {
+    background-color: slateblue;
 }
-.login-box {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding: 20px 20px 0px 20px;
+.hideLogin {
+    display: none;
 }
-.login-button {
-    border: 0;
-    border-radius: 5px;
-    background-color: darkslateblue;
-    color: white;
-    padding: 10px 20px 10px 20px;
-    box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
+.showLogin {
+    display: block;
 }
-.error-box {
-    background-color: rgb(252, 230, 103);
-    box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
-    padding: 10px 20px 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
+.hideRegister {
+    display: none;
 }
-.error-box2 {
-    background-color: rgb(252, 103, 103);
+.showRegister {
+    display: block;
 }
