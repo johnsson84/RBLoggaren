@@ -17,7 +17,7 @@
     -moz-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
 }
 .form-box {
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: white;
     border-radius: 5px;
     padding: 20px;
@@ -43,4 +43,16 @@
     box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
     -webkit-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
+}
+.error-box {
+    background-color: rgb(252, 230, 103);
+    box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(66,66,66,0.75);
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.error-box2 {
+    background-color: rgb(252, 103, 103);
 }
