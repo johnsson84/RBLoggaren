@@ -31,7 +31,8 @@ const Login = () => {
       };
 
     try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/signin`, options);
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/signin`, 
+          options);
         
         
         if (!response.ok) {
@@ -39,11 +40,9 @@ const Login = () => {
           return
         }
 
-        const data = (await response).json();
-        console.log(data);
-
     } catch (err) {
-        console.log("Connection error: " + err)
+        console.log("Connection error: " + err);
+        setError(3);
     }
   };
 
@@ -58,6 +57,12 @@ const Login = () => {
       return (
         <div className="error-box error-box2">
           <p>Fel användarnamn eller lösenord!</p>
+        </div>
+      )
+    } else if (error === 3) {
+      return (
+        <div className="error-box error-box2">
+          <p>Något gick fel! Försök igen senare...</p>
         </div>
       )
     }

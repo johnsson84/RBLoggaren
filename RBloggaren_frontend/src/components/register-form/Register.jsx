@@ -40,14 +40,13 @@ const Register = () => {
         `${import.meta.env.VITE_API_URL}/auth/signup`,
         options
       );
-      const data = (await response).json();
-      console.log(data);
-      if (!data.ok) {
+      console.log(response);
+      if (!response.ok) {
         console.log("inte ok")
         setError(2);
-      }
-      if (data.ok) {
+      } else if (response.ok) {
         alert("Användare registrerad!")
+        setError(0)
         window.location.reload();
       }
     } catch (err) {
@@ -65,7 +64,7 @@ const Register = () => {
     } else if (error === 2) {
       return (
         <div className="error-box error-box2">
-          <p>Fel användarnamn eller lösenord!</p>
+          <p>Fel! Användarnamnet upptaget eller fel antal tecken ifyllda.</p>
         </div>
       );
     }
